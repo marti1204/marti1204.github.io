@@ -1,0 +1,116 @@
+/* CSS Document */
+
+body{font-family: Montserrat, sans-serif;}
+
+a{text-decoration: none; color: #000;}
+
+/*HEADER*/
+.header {
+    position: fixed; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    z-index: 100;
+    width: 100%;
+    top:0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 2px solid black;
+    }
+
+/*CLASSE SCRITTA WORK*/    
+.box {
+    text-align:right; 
+    margin-right:30px; 
+    padding-top:15px;
+    font-size:20px;
+    font-weight: 300;
+    }
+
+/*CLASSE LOGO*/    
+.logo {
+    margin-left:30px;
+    }
+    
+/*CLASSE GENERALE DELLO SLIDER*/
+.splide {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    color:black;
+    displlay: visible;
+    }     
+
+.splide__slide {
+    height: 400px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.splide__slide img  {
+    object-fit:cover;
+    height:100%;
+    width:100%;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+    }
+
+.splide__slide img::after  {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,0.5);
+    }
+
+
+@media screen and (max-width:768px) {
+    
+ .hero {
+    display:block; 
+    text-align:left;
+    margin-left: 0px;
+    padding-left:0px;
+    margin-top:150px;
+    width:100%;
+    padding-right:0px;
+    height: auto;
+        }
+
+.logo {
+    margin-left:5px;
+    }
+    
+.box {
+    text-align:right;
+    margin-right:0px;
+    font-weight:normal;
+    font-size:20px;
+    }
+    
+.container-fluid {  
+    width:100%; 
+    flex-wrap: wrap;
+    content-align: center;
+    display:block;
+    height:auto;
+    padding-left:20px;
+    margin-top:400px;
+    } 
+    
+.row {
+    flex-wrap: wrap;
+    content-align: center;  
+    text-align:center;
+    }  
+    
+#column {
+    display: block;
+    padding-right:0px;
+    }  
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">      
+      <link rel="stylesheet" href="bootstrap.min.css"/>    
+      <link rel="stylesheet" text="text/css" href="stylework.css"/>
+  
+  <title>Work</title>
+</head>
+<body>
+  
+<div class="header">
+  <div class="logo"><a href="file:///C:/Users/martina/OneDrive/Desktop/portfolio%20sistemato/Home%20page/Home%20page.html">
+  <img src="immagini/logo.png" alt="logo" width="80"; height="40";/> </a></div>
+  <div class="box">
+   Work  
+  </div>
+ </div>
+ 
+  <section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track ">
+		<ul class="splide__list ">
+			<li class="splide__slide"><a href="Work-Design Against War.html"> <img src="immagini%20progetti/foto%20cootie%20catcher.png" alt="Design Against War">Give peace a chance</a></li>
+			<li class="splide__slide"><a href="Banco Alimentare.html"><img src="immagini%20progetti/foto banco alimentare.png" alt="Banco Alimentare" height="600";>Support and Share</a></li>
+			<li class="splide__slide"><a href="MESCOLIAMOCI.html"> <img src="immagini%20progetti/copertina.png" alt="#MESCOLIAMOCI">#MESCOLIAMOCI</a></li>
+            <li class="splide__slide"><a href="University Exercises.html"><img src="immagini%20progetti/collage university.png" alt="university">University Exercises</a></li>
+			<li class="splide__slide"><a href="La paura fa 90, ma noi siamo 100mila.html"><img src="immagini progetti/mockup poster 4.png" alt="manifesto">Online community</a></li>
+			<li class="splide__slide"><a href="Fanzine.html" ><img src="immagini%20progetti/copertina fanzine.png" alt="fanzine">Fanzine</a></li>
+		</ul>
+  </div>
+</section>
+ 
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+   
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          perPage: 3, 
+          perMove: 1,
+          gap: "5vw",
+          padding: "5vw",
+          breakpoints: {
+              768: {
+                 perPage:1,
+                 },
+          },
+        });
+
+        splide.mount();
+      });
+  
+ ScrollReveal().reveal('.reveal' , { distance: '100px' , duration: 1500 , easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+
+</script>
+
+</body>
+</html>
